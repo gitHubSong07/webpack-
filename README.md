@@ -31,7 +31,7 @@
 
   **webpack案例一结束**
 
-* **案例二 webpack入门**
+* **案例二 webpack入门**  
 >1.新建 content.js  
 >
 	module.exports = "It works from content.js.";
