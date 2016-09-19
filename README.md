@@ -69,7 +69,7 @@
 `$ webpack ./entry.js bundle.js --module-bind 'css=style!css'`   
 
 * **案例四 webpack.config.js 配置文件设置**   
->1.  新建webpack.config.js 
+>1.  新建webpack.config.js     
 >
 		heloo worold
 	
