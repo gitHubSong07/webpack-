@@ -68,9 +68,9 @@
 	可以用 require("./style.css");替代但是在构建bundle.js的时候要这样写：  
 `$ webpack ./entry.js bundle.js --module-bind 'css=style!css'`   
 
-* **案例四 webpack.config.js 配置文件设置**   
->1.新建 webpack.config.js    
->    
+* **案例四 webpack.config.js 配置文件设置**     
+>  1.新建 webpack.config.js    
+>      
 		module.exports = {  
 	    		entry: "./entry.js",  //入口文件  
 		 	output: {  //生成的文件  
