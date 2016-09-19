@@ -70,7 +70,7 @@
 
 * **案例四 webpack.config.js 配置文件设置**   
 >1.新建 webpack.config.js    
->
+>    
 		module.exports = {  
 	    		entry: "./entry.js",  //入口文件  
 		 	output: {  //生成的文件  
