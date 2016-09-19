@@ -13,7 +13,7 @@
 		document.write('Hello World!');		
   
 >3.  新建index.html  
->    		
+>		
 		<!DOCTYPE html>
 		<html lang="en">
 		<head>
@@ -31,7 +31,7 @@
 
   **webpack案例一结束**
 
-* **案例二 webpack入门**  
+* **案例二 webpack入门**
 >1.新建 content.js  
 >
 	module.exports = "It works from content.js.";
@@ -69,23 +69,34 @@
 `$ webpack ./entry.js bundle.js --module-bind 'css=style!css'`   
 
 * **案例四 webpack.config.js 配置文件设置**   
->1.  新建webpack.config.js     
+>1.新建 webpack.config.js  
 >
-		heloo worold
-	
->2.有了新的配置文件，可以用webpack 直接运行    
- `$ webpack`  
-效果与案例三相同	   
+		module.exports = {
+	    entry: "./entry.js",  //入口文件
+	    output: {  //生成的文件
+	        path: __dirname,  //获取当前路径
+	        filename: "bundle.js"   //自动go构建文件的名称
+	    },
+	    module: { //模块解释器 如 后缀不同 解释器不同
+	        loaders: [
+	            { test: /\.css$/, loader: "style!css" }
+	        ]
+	    }
+	};
+
+>2.有了新的配置文件，可以用webpack 直接运行  
+ `$ webpack`
+效果与案例三相同	 
 
 
-Tip: 控制台输出颜色控制（未测试过） 
- 开启:  `$ webpack --progress --colors`    
-关闭: `$ webpack --progress --colors --watch`  
+<i>Tip: 控制台输出颜色控制（未测试过）  </i>  
+ 开启:  `$ webpack --progress --colors`  
+关闭: `$ webpack --progress --colors --watch`
 
-* **利用webpack 构建8080服务器**   
->1. 执行 `$ npm install webpack-dev-server -g`  
->2. 执行 `$ webpack-dev-server --progress --colors`  
->3. 浏览器打开 `localhost:8080`  
+* **利用webpack 构建8080服务器**    
+>1. 执行 `$ npm install webpack-dev-server -g`
+>2. 执行 `$ webpack-dev-server --progress --colors`
+>3. 浏览器打开 `localhost:8080`
 
 
    
