@@ -69,18 +69,10 @@
 `$ webpack ./entry.js bundle.js --module-bind 'css=style!css'`   
 
 * **案例四 webpack.config.js 配置文件设置**   
->1.  新建webpack.config.js     
->   	
-		<!DOCTYPE html>
-		<html lang="en">
-		<head>
-			<meta charset="UTF-8">
-			<title>hello</title>
-		</head>
-		<body>
-			<script src="bundle.js"></script>
-		</body>
-		</html>	 
+>1.  新建webpack.config.js 
+>
+		heloo worold
+	
 >2.有了新的配置文件，可以用webpack 直接运行    
  `$ webpack`  
 效果与案例三相同	   
