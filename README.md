@@ -13,7 +13,7 @@
 		document.write('Hello World!');		
   
 >3.  新建index.html  
->		
+>    		
 		<!DOCTYPE html>
 		<html lang="en">
 		<head>
