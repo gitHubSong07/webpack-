@@ -70,20 +70,20 @@
 
 * **案例四 webpack.config.js 配置文件设置**   
 >1.新建 webpack.config.js  
->     <code>
-		module.exports = {
-		    entry: "./entry.js",  //入口文件
-		    output: {  //生成的文件
-		        path: __dirname,  //获取当前路径
-		        filename: "bundle.js"   //自动go构建文件的名称
-		    },
-		    module: { //模块解释器 如 后缀不同 解释器不同
-		        loaders: [
-		            { test: /\.css$/, loader: "style!css" }
-		        ]
-		    }
-		};
-	</code>
+>     <code>  
+		module.exports = {  
+		    entry: "./entry.js",  //入口文件  
+		    output: {  //生成的文件  
+		        path: __dirname,  //获取当前路径  
+		        filename: "bundle.js"   //自动go构建文件的名称  
+		    },  
+		    module: { //模块解释器 如 后缀不同 解释器不同  
+		        loaders: [  
+		            { test: /\.css$/, loader: "style!css" }  
+		        ]  
+		    }  
+		};  
+	</code>  
 	 
 >2.有了新的配置文件，可以用webpack 直接运行    
  `$ webpack`  
