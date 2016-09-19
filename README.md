@@ -86,7 +86,7 @@
 效果与案例三相同	   
 
 
-<i>Tip: 控制台输出颜色控制（未测试过）  </i>    
+Tip: 控制台输出颜色控制（未测试过） 
  开启:  `$ webpack --progress --colors`    
 关闭: `$ webpack --progress --colors --watch`  
 
